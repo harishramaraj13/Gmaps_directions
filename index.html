@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <style>
+        #map{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>GOOGLE MAPS</h1>
+    <div id="map"></div>
+<script>
+    function initMap(){
+        var options = {
+            center:{lat:12.9716,lng:77.5946},
+            zoom:8
+        }
+        var map = new google.maps.Map(document.getElementById('map'),options);
+    }
+</script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqpgr4MCboMasBvW3KRgOIqB36zKNemwA&callback=initMap">
+
+    </script>
+</body>
+</html> -->
+
+
+<!doctype html>
+
+<html>
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+  <head>
+    <title>GOOGLE MAPS VANILLA</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  </head>
+  <body>
+    <div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">Search Bar</div>
+      </div>
+      <div id="pac-container">
+        <br>
+        <input id="pac-curr" type="text" placeholder="Enter current location" />
+        <br>
+        <input id="pac-input" type="text" placeholder="Enter Destination" />
+        <br>
+        <button id="share">share my location</button>
+      </div>
+      <pre id="result"></pre>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqpgr4MCboMasBvW3KRgOIqB36zKNemwA&callback=initMap&libraries=places"
+      defer
+    ></script>
+    <br>
+    <script src="index.js"></script>
+  </body>
+</html>
